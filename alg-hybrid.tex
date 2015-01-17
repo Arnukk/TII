@@ -1,0 +1,7 @@
+
+\vspace{-5pt} 
+\subsection{Two-stage Hybrid Approach}
+
+{\sc GRA} can be executed rapidly, as it relies on a greedy approach. However, the worst-case guarantee of {\sc 1DPA} outperforms that of {\sc GRA}. Note that a superior worst-case guarantee does not necessarily imply superior empirical ratio with the optimal solutions in practice. It is possible that some instances of problems may give {\sc GRA} a superior solution to that of {\sc 1DPA}. Therefore, one can obtain an improved solution by selecting the one with the maximum valuation (or the minimum compensation cost) of the candidate solutions from {\sc GRA} and {\sc 1DPA}.
+
+Therefore, a two-stage algorithm ({\sc 2SA}) is proposed to leverage both approaches. The first stage uses {\sc GRA} that is capable of determining a close-to-optimal load curtailment scheme rapidly to maintain microgrid stability. The second stage relies on {\sc 1DPA} that can further improve the optimality solution of the first stage, when more response time is permitted. 

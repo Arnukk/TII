@@ -1,0 +1,109 @@
+\begin{thebibliography}{10}
+
+\bibitem{NEC}
+{\em National Electrical Code (NEC) NFPA 70-2005}.
+
+\bibitem{CKM14}
+Chi-Kin Chau, Khaled Elbassioni, and Majid Khonji.
+\newblock Truthful mechanisms for combinatorial {AC} electric power allocation.
+\newblock In {\em Proceedings of the 2014 International Conference on
+  Autonomous Agents and Multi-agent Systems (AaMAS)}. International Foundation
+  for Autonomous Agents and Multiagent Systems, 2014.
+
+\bibitem{Ref6}
+Weiwei Chen, Xing Wang, J.~Petersen, R.~Tyagi, and J.~Black.
+\newblock Optimal scheduling of demand response events for electric utilities.
+\newblock {\em Smart Grid, IEEE Transactions on}, 4(4):2309--2319, Dec 2013.
+
+\bibitem{466502}
+C.~Concordia, L.H. Fink, and G.~Poullikkas.
+\newblock Load shedding on an isolated system.
+\newblock {\em Power Systems, IEEE Transactions on}, 10(3):1467--1472, Aug
+  1995.
+
+\bibitem{minKS}
+J.~Csirik, J.~B.~G. Frenk, M.~Labb{\'e}, and S.~Zhang.
+\newblock Heuristics for the 0-1 min-knapsack problem.
+\newblock {\em Acta Cybern.}, 10(1-2):15--20, September 1991.
+
+\bibitem{Ref7}
+Z.~Darabi and M.~Ferdowsi.
+\newblock An event-based simulation framework to examine the response of power
+  grid to the charging demand of plug-in hybrid electric vehicles.
+\newblock {\em Industrial Informatics, IEEE Transactions on}, 10(1):313--322,
+  Feb 2014.
+
+\bibitem{Ref10}
+C.~Gouveia, J.~Moreira, C.L. Moreira, and J.A. Pecas~Lopes.
+\newblock Coordinating storage and demand response for microgrid emergency
+  operation.
+\newblock {\em Smart Grid, IEEE Transactions on}, 4(4):1898--1908, Dec 2013.
+
+\bibitem{5348255}
+S.~Hirodontis, H.~Li, and P.A. Crossley.
+\newblock Load shedding in a distribution network.
+\newblock In {\em Sustainable Power Generation and Supply, 2009. SUPERGEN '09.
+  International Conference on}, pages 1--6, April 2009.
+
+\bibitem{Ref5}
+M.~Humayun, A.~Safdarian, M.Z. Degefa, and M.~Lehtonen.
+\newblock Demand response for operational life extension and efficient capacity
+  utilization of power transformers during contingencies.
+\newblock {\em Power Systems, IEEE Transactions on}, PP(99):1--10, 2014.
+
+\bibitem{KSbook}
+H.~Kellerer, U.~Pferschy, and D.~Pisinger.
+\newblock {\em Knapsack Problems}.
+\newblock Springer, 2004.
+
+\bibitem{Ref3}
+A.~Khodaei, M.~Shahidehpour, and S.~Bahramirad.
+\newblock Scuc with hourly demand response considering intertemporal load
+  characteristics.
+\newblock {\em Smart Grid, IEEE Transactions on}, 2(3):564--571, Sept 2011.
+
+\bibitem{Ref8}
+Dong-Min Kim and Jin-O Kim.
+\newblock Design of emergency demand response program using analytic hierarchy
+  process.
+\newblock {\em Smart Grid, IEEE Transactions on}, 3(2):635--644, June 2012.
+
+\bibitem{Ref2}
+A.-H. Mohsenian-Rad and A.~Leon-Garcia.
+\newblock Optimal residential load control with price prediction in real-time
+  electricity pricing environments.
+\newblock {\em Smart Grid, IEEE Transactions on}, 1(2):120--133, Sept 2010.
+
+\bibitem{Ref9}
+M.M. Sahebi, E.A. Duki, M.~Kia, A.~Soroudi, and M.~Ehsan.
+\newblock Simultanous emergency demand response programming and unit commitment
+  programming in comparison with interruptible load contracts.
+\newblock {\em Generation, Transmission Distribution, IET}, 6(7):605--611, July
+  2012.
+
+\bibitem{Ref12}
+K.~Samarakoon, J.~Ekanayake, and N.~Jenkins.
+\newblock Investigation of domestic load control to provide primary frequency
+  response using smart meters.
+\newblock {\em Smart Grid, IEEE Transactions on}, 3(1):282--292, March 2012.
+
+\bibitem{Ref1}
+Chua-Liang Su and D.~Kirschen.
+\newblock Quantifying the effect of demand response on electricity markets.
+\newblock {\em Power Systems, IEEE Transactions on}, 24(3):1199--1207, Aug
+  2009.
+
+\bibitem{Ref4}
+Yunfei Wang, I.R. Pordanjani, and Wilsun Xu.
+\newblock An event-driven demand response scheme for power system security
+  enhancement.
+\newblock {\em Smart Grid, IEEE Transactions on}, 2(1):23--29, March 2011.
+
+\bibitem{6493097}
+Shengli Xing.
+\newblock Microgrid emergency control based on the stratified controllable load
+  shedding optimization.
+\newblock In {\em Sustainable Power Generation and Supply (SUPERGEN 2012),
+  International Conference on}, pages 1--5, Sept 2012.
+
+\end{thebibliography}

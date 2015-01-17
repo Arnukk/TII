@@ -1,0 +1,10 @@
+
+\vspace{-5pt} 
+\subsection{Power-off Protection}
+
+The aforementioned algorithms can be applied heuristically to the settings with minimum power-off protection constraint ({\sc MPOP}). At each time $t$, the decision is made with respect to the set of feasible customers $\hat{\cal N}(t)$, who are not restricted by minimum power-off protection constraint. Namely, define \vspace{-5pt} 
+\begin{eqnarray}
+\hat{\cal N}(t) = \Big\{ k \in {\cal N}& \mid & \mbox{there exists no\ } t' \mbox{\ such that\ } \notag \\
+ & & x_k(t')=0 \mbox{\ and\ } t - t' \le  T^{\rm off}_k \Big\}
+\end{eqnarray} 
+Then, {\sc GRA}, {\sc 1DPA} and {\sc 2SA} are applied to $\hat{\cal N}(t)$ similarly.

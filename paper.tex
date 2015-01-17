@@ -1,0 +1,285 @@
+\documentclass{IEEEtran}
+
+\usepackage{cite}      
+\usepackage{graphicx}  
+\usepackage{caption}
+\usepackage{subcaption}
+%\usepackage[tight,footnotesize]{subfigure}
+    \usepackage{caption}
+\usepackage{subcaption}
+
+\usepackage[table]{xcolor}  
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{amsmath}   
+%\usepackage{mathtools}
+
+\usepackage{hhline}
+\usepackage{tabularx,colortbl}
+
+\usepackage[sans]{dsfont}
+\usepackage{stmaryrd}
+\usepackage{pifont}
+\usepackage{wasysym}
+\usepackage{algorithm} 
+\usepackage{array}
+\usepackage{url}
+%\usepackage[usenames]{color}
+\usepackage{tabu}
+\usepackage{multirow}
+\usepackage{booktabs}
+%\usepackage[noend]{sty/algorithmic}
+%\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+%\usepackage{mathaccent}
+%\usepackage{mnsymbol}
+% \usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry} 
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{lemma}[theorem]{Lemma}
+%\newtheorem*{informallemma}{Informal Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{observation}[theorem]{Observation}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}{Example}
+\def\endexam{\hspace*{\fill}~$\diamond$\par\endtrivlist\unskip}
+
+\setlength{\pdfpagewidth}{8.5in}
+\setlength{\pdfpageheight}{11in}
+
+
+\newcommand{\Pj}{ { {\tt Pj}_{\sigma^T_i} } }
+\newcommand{\Pjj}{ { {\tt Pj}_{\sigma^{T^*}_i} } }
+\newcommand{\Pij}{ { {\tt Pj}_{\sigma^{T^i,i}_\ell } }}
+\newcommand{\E}[2][{}]{\ensuremath{\mathrm{E}_{#1}\bigl[#2\bigr]}}   
+\newcommand{\Pro}[1]{\ensuremath{\Pr\bigl[#1\bigr]}}
+\newcommand{\p}{{\em P}\xspace}
+\newcommand{\np}{{\em NP}\xspace}
+\newcommand{\nphard}{\np-hard\xspace} 
+\newcommand{\npcomplete}{\np-complete\xspace}
+\newcommand{\apx}{{\em APX}\xspace}
+\newcommand{\ball}[2]{\ensuremath{\mathit{Ball}(#1,#2)}}
+
+\newcommand{\xcp}{ x^{ \text{\tiny  \rm cx}}}
+\newcommand{\xcpp}{ x^{  \text{\tiny \rm  cx*}}}
+\newcommand{\xlp}{ x^{ \text{\tiny \rm  lp}}}
+\newcommand{\xlpp}{ x^{ \text{\tiny \rm  lp*}}}
+
+\newcommand{\dcp}{ d^{ \text{\tiny  \rm cx}}}
+\newcommand{\dcpp}{ d^{ \text{\tiny  \rm cx*}}}
+
+\newcommand{\ucp}{ u^{ \text{\tiny  \rm cx}}}
+
+\newcommand{\ucpp}{ u^{ \text{\tiny  \rm cx*}}}
+
+\newcommand{\ocp}{ {\cal O}^{ \text{\tiny  \rm cx}}}
+\newcommand{\ocpp}{ {\cal O}^{ \text{\tiny  \rm cx*}}}
+
+
+\def\CC{\mathbb C}
+\def\RR{\mathbb R}
+\def\ZZ{\mathbb Z}
+\def\EE{\mathbb E}
+\def\II{\mathbb I}
+\def\cA{\mathcal A}
+\def\cB{\mathcal B}
+\def\cC{\mathcal C}
+\def\cD{\mathcal D}
+\def\cF{\mathcal F}
+\def\cG{\mathcal G}
+\def\cI{\mathcal I}
+\def\cH{\mathcal H}
+\def\cJ{\mathcal J}
+\def\cK{\mathcal K}
+\def\cL{\mathcal L}
+\def\cM{\mathcal M}
+\def\cN{\mathcal N}
+\def\cS{\mathcal S}
+\def\cT{\mathcal T}
+\def\cO{\mathcal O}
+\def\cU{\mathcal U}
+\def\cY{\mathcal Y}
+\def\cW{\mathcal W}
+\def\cX{\mathcal X}
+
+\def\ccV{\mathcal V}
+
+\def\bT{\mathbf T}
+\def\brr{\mathbf r}
+\def\bu{\mathbf u}
+\def\bd{\mathbf d}
+\def\bv{\mathbf v}
+\def\bzero{\mathbf 0}
+
+\newcommand{\hide}[1]{}
+\newcommand{\raf}[1]{(\ref{#1})}
+
+%\newcommand{\tx}{\ensuremath{\tilde{x}} }
+\newcommand{\tc}{\ensuremath{\tilde{c}}}
+\newcommand{\cP}{\ensuremath{\mathcal{P}}}
+\newcommand{\cQ}{\ensuremath{\mathcal{Q}}}
+\newcommand{\cR}{\ensuremath{\mathcal{R}}}
+\newcommand{\cV}{\ensuremath{\mathcal{V}}}
+\newcommand{\cE}{\ensuremath{\mathcal{E}} }
+\newcommand{\abs}[1]{\ensuremath{\left|#1\right|}}
+
+%Swamy's shortcuts
+\newcommand{\R}{\ensuremath{\mathbb R}}
+\newcommand{\Z}{\ensuremath{\mathbb Z}}
+\newcommand{\N}{\ensuremath{\mathbb N}}
+\newcommand{\A}{\ensuremath{\mathcal{A}}}
+\newcommand{\B}{\ensuremath{\mathcal{B}}}
+\newcommand{\C}{\ensuremath{\mathcal{C}}}
+\newcommand{\Hc}{\ensuremath{\mathcal{H}}}
+\newcommand{\I}{\ensuremath{\mathcal I}}
+\newcommand{\F}{\ensuremath{\mathcal F}}
+\newcommand{\D}{\ensuremath{\mathcal D}}
+\newcommand{\T}{\ensuremath{\mathcal T}}
+\newcommand{\Oc}{\ensuremath{\mathcal O}}
+\newcommand{\Sc}{\ensuremath{\mathcal S}}
+\newcommand{\Pc}{\ensuremath{\mathcal P}}
+\newcommand{\Rc}{\ensuremath{\mathcal R}}
+\newcommand{\V}{\ensuremath{\mathcal V}}
+
+\newcommand{\OPT}{\ensuremath{\textsc{Opt}}}
+\newcommand{\cost}{\ensuremath{\mathit{cost}}}
+\newcommand{\charge}{\ensuremath{\mathit{charge}}}
+\newcommand{\argmin}{\ensuremath{\mathrm{argmin}}}
+\newcommand{\val}{\ensuremath{\mathit{value}}}
+\newcommand{\frall}{\ensuremath{\text{ for all }}}
+\newcommand{\freach}{\ensuremath{\text{ for each }}}
+\newcommand{\weight}{\ensuremath{\mathit{weight}}}
+\newcommand{\sse}{\ensuremath{\subseteq}}
+\newcommand{\sm}{\ensuremath{\setminus}}
+\newcommand{\es}{\ensuremath{\emptyset}}
+
+\newcommand{\conv}{\operatorname{conv}}
+\newcommand{\poly}{\operatorname{poly}}
+\newcommand{\polylog}{\operatorname{polylog}}
+\newcommand{\prof}{\operatorname{prof}}
+\newcommand{\DP}{\operatorname{DP}}
+\newcommand{\WS}{\operatorname{WS}}
+\newcommand{\level}{\operatorname{d}}
+
+
+\newcommand{\dt}{\ensuremath{\delta}}
+\newcommand{\e}{\ensuremath{\epsilon}}
+\def\eps{\varepsilon}
+\newcommand{\gm}{\ensuremath{\gamma}}
+\newcommand{\sg}{\ensuremath{\sigma}}
+\newcommand{\al}{\ensuremath{\alpha}}
+\newcommand{\ld}{\ensuremath{\lambda}}
+\newcommand{\tht}{\ensuremath{\theta}}
+\newcommand{\Tht}{\ensuremath{\Theta}}
+\def\br#1{{{(#1)}}}
+
+%\renewcommand{\thefigure}{\thesection.\arabic{figure}}
+\newcommand{\bA}{\ensuremath{\bar A}}
+\newcommand{\bC}{\ensuremath{\bar C}}
+\newcommand{\hC}{\ensuremath{\hat C}}
+\newcommand{\bZ}{\ensuremath{\bar Z}}
+\newcommand{\Iopt}{\ensuremath{O^*}}
+\newcommand{\assign}{\ensuremath{\leftarrow}}
+\newcommand{\tx}{\ensuremath{\tilde x}}
+\newcommand{\ty}{\ensuremath{\tilde y}}
+\newcommand{\tz}{\ensuremath{\tilde z}}
+\newcommand{\tu}{\ensuremath{\tilde u}}
+\newcommand{\hx}{\ensuremath{\hat x}}
+\newcommand{\hy}{\ensuremath{\hat y}}
+\newcommand{\hz}{\ensuremath{\hat z}}
+\newcommand{\hc}{\ensuremath{\hat c}}
+\newcommand{\hu}{\ensuremath{\hat u}}
+\newcommand{\ith}{\ensuremath{\mathrm{th}}}
+\newcommand{\bo}{\ensuremath{\boldsymbol{0}}}
+\newcommand{\bone}{\ensuremath{\boldsymbol{1}}}
+\newcommand{\optm}{\ensuremath{M^*}}
+\newcommand{\round}{\ensuremath{\mathsf{Round}}}
+\newcommand{\opt}{\ensuremath{\mathsf{opt}}}
+\newcommand{\swm}{\ensuremath{\mathrm{SWM}}}
+
+\newcommand{\ve}{\varepsilon}
+\newcommand{\vp}{\varphi}
+\newcommand{\ceil}[1]{\ensuremath{\lceil #1 \rceil}}
+\newcommand{\dimV}{\dim_V}
+\newcommand{\ddim}{\ensuremath{\dim_{D}}\xspace}
+\newcommand{\cdim}{\ensuremath{\dim_{C}}\xspace}
+\newcommand{\ncdim}{\ensuremath{\dim_{C}}\xspace}
+\newcommand{\sqrtn}{\ensuremath{\sqrt{n}}}
+\newcommand{\dd}{doubling dimension\xspace}
+\newcommand{\cd}{correlation dimension\xspace}
+\newcommand{\ncd}{correlation dimension\xspace}
+\newcommand{\Ncd}{Correlation dimension\xspace}
+\newcommand{\NCD}{Correlation Dimension\xspace}
+\newcommand{\Dd}{Doubling dimension\xspace}
+\newcommand{\diam}{\operatorname{diam}}
+\newcommand{\Diam}{\textsf{Diam}}
+\newcommand{\argmax}{\operatorname{argmax}}
+\newcommand{\lt}{\operatorname{lt}}
+\newcommand{\rt}{\operatorname{rt}}
+\newcommand{\vl}{\operatorname{val}}
+\newcommand{\Ar}{\textsf{Ar}}
+\def\UFP{\textsc{Ufp}}
+\def\RPP{\textsc{Rpp}}
+\def\LSMDP{\textsc{Lsmdp}}
+\def\HP{\textsc{Hp}}
+\def\MFS{\textsc{Mfs}}
+
+
+\DeclareCaptionType{copyrightbox}
+
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+
+\newtheorem{innercustomthm}{Theorem}
+\newenvironment{customthm}[1]
+  {\renewcommand\theinnercustomthm{#1}\innercustomthm}
+  {\endinnercustomthm}
+
+
+
+\title{A Two-Stage Event-Based Demand Response Management Algorithm for Microgrids} 
+
+
+%\author{
+%\IEEEauthorblockN{Majid Khonji, \quad Chi-Kin Chau,\quad Khaled Elbassioni}\\
+%\IEEEauthorblockA{
+%Department of Electrical Engineering and Computer Science, \\
+%Masdar Institute of Science and Technology, UAE\\
+%\{mkhonji, ckchau, kelbassioni\}@masdar.ac.ae}   
+%}
+
+
+\begin{document}
+
+\maketitle
+
+
+\begin{abstract}
+	\input{abstract}
+\end{abstract}
+
+{\keywords Algorithms, Smart Grids, Demand Response Management, Microgrids}
+
+
+\input{nomcl}
+\input{intro}
+\input{model}
+\input{alg-greedy}
+\input{alg-1dpa}
+\input{alg-hybrid}
+\input{alg-mpdc}
+%\input{alg-fptas}
+\input{sims}
+\input{concl}
+
+\bibliographystyle{plain}
+\bibliography{reference}
+
+\input{append}
+
+\end{document}
